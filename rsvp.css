@@ -1,0 +1,22 @@
+#main-body {
+	text-align: center;
+}
+#textbox {
+	height: 300px;
+	width: 300px;
+}
+#submit-button {
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+#reader-body {
+	position: absolute;
+	top: 200px;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+}
