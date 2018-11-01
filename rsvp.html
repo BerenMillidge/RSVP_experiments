@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RSVP Experiment</title>
+	<link rel="stylesheet" type="text/css" href="./rsvp.css">
+</head>
+<body>
+	<div id="main-body">
+		<h1> Rapid Serial Visual Presentation Experiments </h1>
+		<p> Rapid serial visual presentation has been claimed to be a means of speed reading. Words are presented one at a time rapidly, in the same spot. The thought is that by preventing saccades along the line, by allowing the eye to fixate in one place and letting the words come to that place, that the inefficiencies/lost processing time caused by saccades will vanish, thus theoretically allowing faster, more efficient reading.</p>
+
+		<p> Copy paste your text into the textbox and hit 'Submit' to start the RSVP reader.</p>
+
+		<textarea id="textbox"></textarea>
+		<p> </p>
+		<button id="submit-button">Submit!</button>
+
+	</div>
+	<div id="reader-body">
+		<div id="word"> </div>
+	</div>
+
+
+	<script src="./rsvp.js" type="text/javascript" onclick="OnSubmitButtonClick()"></script>
+
+</body>
+</html>
