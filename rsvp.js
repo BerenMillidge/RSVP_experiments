@@ -28,6 +28,29 @@ function getWaitTime(word){
 	return waitTime;
 }
 
+function three_word_loop(words, i){
+	var word = words[i];
+	setTimeout(function() {
+		word_div.innerHTML = words[i-1] + " " +  word + " " + words[i+1];
+		i ++;
+		if (i < words.length){
+			three_word_loop(words, i)
+		}
+		if (i === words.length) {
+			setTimeout(function() {
+				reader_active = false;
+				update_state()
+				return;
+			},1000);
+
+			return;
+		}
+		
+		return;
+	}, getWaitTime(word))
+}
+
+
 
 function word_loop(words, i){
 	var word = words[i];
